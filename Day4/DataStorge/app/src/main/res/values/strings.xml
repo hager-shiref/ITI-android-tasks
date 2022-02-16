@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Activity</string>
+    <string name="MobileNumber">Mobile Number</string>
+    <string name="Message">Message</string>
+    <string name="Next">Next</string>
+    <string name="Close">Close</string>
+    <string name="SaveData">Sava Data</string>
+    <string name="LoadData">Load Data</string>
+
+</resources>

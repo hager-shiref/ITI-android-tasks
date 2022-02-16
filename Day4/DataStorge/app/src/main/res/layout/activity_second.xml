@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/txt_view_mobile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <TextView
+        android:id="@+id/txtViewMobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="32dp"
+        android:text="textttt"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtViewMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="mesageee"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtViewMobile"
+        app:layout_constraintStart_toStartOf="@+id/txtViewMobile"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewMobile" />
+
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_width="83dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="108dp"
+        android:text="@string/Close"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/saveShared"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/SaveData"
+        app:layout_constraintBottom_toTopOf="@+id/btnClose"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.071"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewMessage"
+        app:layout_constraintVertical_bias="0.263" />
+
+    <Button
+        android:id="@+id/loadShared"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/LoadData"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.534"
+        app:layout_constraintStart_toEndOf="@+id/saveShared"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <Button
+        android:id="@+id/internalSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/SaveData"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.135"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saveShared"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/internalLoad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/LoadData"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.472"
+        app:layout_constraintStart_toEndOf="@+id/internalSave"
+        app:layout_constraintTop_toBottomOf="@+id/loadShared"
+        app:layout_constraintVertical_bias="0.002" />
+
+    <Button
+        android:id="@+id/savaSql"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/SaveData"
+        app:layout_constraintBottom_toTopOf="@+id/btnClose"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/internalSave"
+        app:layout_constraintVertical_bias="0.181" />
+
+    <Button
+        android:id="@+id/loadSql"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/LoadData"
+        app:layout_constraintBottom_toTopOf="@+id/btnClose"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.547"
+        app:layout_constraintStart_toEndOf="@+id/savaSql"
+        app:layout_constraintTop_toBottomOf="@+id/internalLoad"
+        app:layout_constraintVertical_bias="0.306" />
+</androidx.constraintlayout.widget.ConstraintLayout>
